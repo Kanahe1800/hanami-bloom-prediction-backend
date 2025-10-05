@@ -9,6 +9,7 @@ A Flask-based REST API for predicting hanami (cherry blossom) bloom dates using 
 - **Robust Error Handling**: Graceful fallbacks when models fail to load
 - **Health Monitoring**: Built-in health check and model status endpoints
 - **Cross-Version Compatibility**: Handles different scikit-learn versions automatically
+- **CORS Enabled**: Full Cross-Origin Resource Sharing support for web browser access
 
 ## Quick Start
 
@@ -124,6 +125,14 @@ python test_10_inputs.py
 # Direct API testing
 python test_direct.py
 ```
+
+### CORS Testing
+
+Open `cors_test.html` in your browser to test CORS functionality with a web interface. This allows you to:
+- Make predictions directly from the browser
+- Test health checks and model listings
+- Verify CORS headers are properly set
+- Generate random test inputs
 
 ## Production Deployment
 
